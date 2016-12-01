@@ -195,9 +195,9 @@
 	<p class="mySchedules">My Schedules:</p>
 	<div class="listStyle">
 		<ul>
-		<% for (var i = 0; i < schedules.length; i++) { %>
-		    <form Action="/schedule/remove/<%= schedules[i]._id %>" Method="post" >
-				<li><a href = '/schedule/<%= schedules[i]._id %>' > <%= schedules[i].title %></a> </li>
+		<% for (var i = 0; i < schedule.length; i++) { %>
+		    <form Action="/schedule/remove/<%= schedule[i]._id %>" Method="post" >
+				<li><a href = '/schedule/<%= schedule[i]._id %>' > <%= schedule[i].title %></a> </li>
 				<p class="description"> <%= schedules[i].descrip%></p>
 				<div style="text-align: right;">
 				<input type="submit" value="Remove" style="margin-bottom: 1.0em;">
