@@ -1,11 +1,10 @@
 applications:
 - path: .
   memory: 256M
-  instances: 3
+  instances: 1
   domain: mybluemix.net
-  name: cs252
-  host: cs252
+  name: chl-kj
+  host: chl-kj
   disk_quota: 1024M
   services:
-  - availability-monitoring-auto
-  - Compose for MongoDB-3s
+  - chl-ComposeForMongoDB
